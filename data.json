@@ -1,0 +1,5 @@
+{
+    "students":[
+       {"name":"ram" ,"mark":100},{"name":"shyam","mark":200},{"name":"hari","mark":50}
+    ]
+}
