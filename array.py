@@ -1,7 +1,7 @@
 a = 40
 print(a)
 
-list = [1, 2, 3, 4]
+list = [1, 2, 3, 4,7]
 print(list[1])
 for a in list:
     print(a)
