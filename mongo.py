@@ -1,7 +1,7 @@
 import pymongo
 
 client = pymongo.MongoClient("mongodb+srv://edangol:97ni%40123Ui@cluster0-xrtz3.mongodb.net/test?retryWrites=true")
-db = client.test
+#db = client.test
 #mydb = client["mydatabase"]
 print(client.list_database_names())
 
