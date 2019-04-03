@@ -1,5 +1,5 @@
-import mysql.connector
-mydb = mysql.connector.connect(
+import pymysql.cursors
+mydb = pymysql.Connect(
   host="remotemysql.com",
   user="ykX5PLVyZY",
   passwd="MVRlvaVxjR",
@@ -13,5 +13,5 @@ mycursor.execute("SELECT name, address FROM student")
 myresult = mycursor.fetchall()
 
 for x in myresult:
-  print(x)
+  print(x[0])
 

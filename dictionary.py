@@ -30,5 +30,10 @@ thisdict =	{
   "year": 1964
 }
 thisdict.pop("model")
+
+x=thisdict["brand"]
+print(thisdict["brand"])
 print(thisdict)
 print(thisdict.items())
+
+
