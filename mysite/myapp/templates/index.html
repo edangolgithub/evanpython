@@ -1,3 +1,4 @@
+{% load static %}  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+    <style>
+    body{
+        color:red;
+    }
+    </style>
 </head>
-<body bgcolor="red">
+<body>
+      
     hello python
+    {{roll}}
+
+
+    <script src="{% static 'script.js' %}" ></script>     
+    <img src="{% static 'renusig.jpeg' %}" alt="my" /> working
+    <img src="/static/renusig.jpeg" alt="my" /> working
 </body>
 </html>

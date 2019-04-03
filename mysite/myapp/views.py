@@ -13,4 +13,8 @@ def gettime(request):
 
 def templat(request):
    y= loader.get_template('index.html')
-   return HttpResponse(y.render())
+   name = {  
+        'student':'rahul' ,
+        'roll':'100'
+    }  
+   return HttpResponse(y.render(name))
