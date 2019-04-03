@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls import  include, url
-from myapp.views import hello
-
+from myapp.views import gettime
+from myapp.views import templat
+from polls.views import learn
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^hello/',hello, name = 'hello'),
-    #path('polls/', include('polls.urls')),
+    path('time/',gettime,name="gettime"),
+    path('', learn,name="learn"),
+    path('t/',templat,name="templat"),
+    path('polls/', include('polls.urls')),
    
 ]
