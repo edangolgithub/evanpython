@@ -5,7 +5,7 @@
     <title>Index</title>  
 </head>  
 <body>  
-<form method="POST" class="post-form">  
+<form method="POST" class="post-form" action="/evan">  
         {% csrf_token %}  
         {{ form.as_p }}  
         <button type="submit" class="save btn btn-default">Save</button>  

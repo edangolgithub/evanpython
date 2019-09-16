@@ -19,3 +19,5 @@ def index(request):
 def frm(request):  
     stu = StuForm()  
     return render(request,"form.html",{'form':stu})  
+def evan(request):
+   return HttpResponse("form submit")
