@@ -1,0 +1,15 @@
+django-admin startproject mysite ------- create website
+
+
+python manage.py startapp polls
+
+python manage.py runserver 8080
+
+or
+python ./manage.py runserver 8080
+
+python manage.py migrate
+
+python manage.py makemigrations polls
+
+python manage.py sqlmigrate polls 0001
