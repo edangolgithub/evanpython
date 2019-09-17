@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'microsoft.wsgi.application'
 DATABASES = {  
         'default': {  
             'ENGINE': 'django.db.backends.mysql',  
+<<<<<<< HEAD
+            'NAME': 'pydb',  
+=======
             'NAME': 'microsoft',  
+>>>>>>> master
             'USER':'root',  
             'PASSWORD':'',  
             'HOST':'localhost',  
