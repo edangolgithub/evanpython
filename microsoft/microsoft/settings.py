@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'microsoft.wsgi.application'
 DATABASES = {  
         'default': {  
             'ENGINE': 'django.db.backends.mysql',  
+<<<<<<< HEAD
             'NAME': 'pydb',  
+=======
+            'NAME': 'microsoft',  
+>>>>>>> master
             'USER':'root',  
             'PASSWORD':'',  
             'HOST':'localhost',  
@@ -128,3 +132,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+ 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
